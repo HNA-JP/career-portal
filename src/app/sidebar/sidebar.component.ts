@@ -24,6 +24,7 @@ export class SidebarComponent {
   public loading: boolean = false;
   public filter: object = {};
   public showPrivacyPolicy: boolean = SettingsService.settings.privacyConsent.sidebarLink;
+  public showCredit: boolean = SettingsService.settings.service.showCredit;
 
   constructor(private searchService: SearchService, private router: Router) {}
 
