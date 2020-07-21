@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SettingsService } from '../services/settings/settings.service';
 
 @Component({
   selector: 'app-main-page',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
 
+  public showSidebar: boolean = SettingsService.settings.service.showSidebar;
   public filterCount: number = 1;
   public listFilter: any = {};
   public displaySidebar: boolean = false;

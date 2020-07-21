@@ -50,6 +50,7 @@
       }
     ],
     "showCategory": true,
+    "showSidebar": true,
     "keywordSearchFields": [
       "publicDescription",
       "title"
